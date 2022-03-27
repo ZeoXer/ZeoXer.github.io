@@ -131,7 +131,7 @@ table {
 
 .banner{
 	height: 346px;
-	background: url("/images/banner.png");
+	background: url("../images/banner.png");
 	margin-bottom: 50px;
 	position: relative;
 }
