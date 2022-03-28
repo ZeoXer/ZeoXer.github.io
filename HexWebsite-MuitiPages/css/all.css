@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*--------------------*/
+
+
+/*------Layout------*/
+
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.header-bar{
+    height: 80px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(71, 67, 67, 0.5);
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links a{
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links .current-page{
+    color: #0bc58c;
+}
+
+.nav-links a::after{
+    content: "";
+    height: 3px;
+    display: block;
+	margin: auto;
+    margin-top: 5px;
+    background: #0bc58c;
+    width: 0%;
+}
+
+.nav-links .current-page::after{
+    width: 100%;
+}
+
+.nav-links a:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.header{
+    height: 569px;
+    margin-bottom: 30px;
+}
+
+.content{
+    padding: 30px;
+    margin-bottom: 60px;
+}
+
+.content-title-region{
+    margin-bottom: 30px;
+}
+
+.content-title{
+    font-size: 38px;
+    color: #0bc58c;
+    font-weight: 500;
+    margin-right: 10px;
+    display: inline;
+}
+
+.content-description{
+    font-size: 18px;
+    font-weight: 400;
+    color: #9b9b9b;
+    display: inline;
+}
+
+.footer-bar{
+    height: 130px;
+    background: #323228;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-copyright{
+    margin: 40px 40px;
+}
+
+.logo-copyright p{
+    color: #9b9b9b;
+    margin-left: 30px;
+    padding: 5px 0;
+}
+
+.social-media ul{
+    margin: 0 40px;
+    display: flex;
+}
+
+.social-media li{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.social-media a{
+    font-size: 25px;
+    color: #323228;
+    padding: 15px;
+}
+
+.green-btn{
+    background: #00cc99;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+.green-btn:hover{
+    background: #06f5b9;
+    transition: 0.5s;
+}
+/*------------------*/
+
+/*------HomePage------*/
+
+.homepage-banner{
+    background: url("../Images/homepage-banner.png");
+    position: relative;
+}
+
+.homepage-banner h1{
+    color: #0bc58c;
+    font-size: 48px;
+    line-height: 1.7;
+    position: absolute;
+    top: 170px;
+    left: 50px;
+}
+
+.homepage-banner span{
+    color: #fff;
+}
+
+.sign-in{
+    font-size: 18px;
+    position: absolute;
+    top: 380px;
+    left: 50px;
+}
+
+.sign-in i{
+    margin-left: 25px;
+}
+
+.course-item-region{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.course-item{
+    width: 270px;
+    border-radius: 5px;
+    padding: 20px;
+	box-shadow: 0px 5px 15px lightgray;
+    text-align: center;
+}
+
+.course-item:hover{
+	box-shadow: 0px 5px 15px grey;
+	transition: 0.5s;	
+}
+
+.course-item img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.course-item h4{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 0;
+    color: #4a4a4a;
+}
+
+.course-item p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #9b9999;
+}
+
+.course-compare-table{
+	margin: 0 auto;
+}
+
+.course-compare-table tr{
+	text-align: left;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	font-size: 18px;
+}
+
+.course-compare-table th{
+	background: #ebebeb;
+	font-weight: 500;
+}
+
+.course-compare-table th,
+.course-compare-table td{
+	width: 250px;
+	padding: 18px 20px;
+}
+
+.course-compare-table span{
+	color: #02a571;
+}
+
+.contact-us{
+    height: 400px;
+    background: #ebebeb;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-us h2{
+    font-size: 35px;
+    line-height: 2;
+    margin-top: 120px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.contact-form input{
+    width: 460px;
+    height: 40px;
+    font-size: 20px;
+    margin: 10px 0;   
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.contact-form .submit-btn{
+    width: 100px;
+    height: 50px;
+    border: 0;
+    text-align: center;
+    margin-left: 375px;
+    cursor: pointer;
+}
+
+/*------Course------*/
+
+.course-banner{
+    background: url("../Images/course-banner.png");
+}
+
+/*------------------*/
+
+
+
+
+
+/*------FAQ------*/
+
+.faq-banner{
+    background: url("../Images/faq-banner.png");
+}
+
+/*------------------*/
