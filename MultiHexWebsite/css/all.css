@@ -325,18 +325,144 @@ table {
     margin-left: 375px;
     cursor: pointer;
 }
+/*------------------*/
 
 /*------Course------*/
 
 .course-banner{
     background: url("../Images/course-banner.png");
+    position: relative;
 }
 
+.title-intro{
+    margin-left: 35px;
+    margin-top: 100px;
+}
+
+.title-intro h1{
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.title-intro h2{
+    font-size: 24px;
+    color: #00cc99;
+    margin-bottom: 60px;
+}
+
+.go-to-class{
+    font-size: 18px;
+    position: absolute;
+}
+
+.go-to-class i{
+    margin-left: 25px;
+}
+
+.two-logo{
+    position: absolute;
+    top: 120px;
+    right: 50px;
+}
+
+.two-logo img{
+    margin-right: 30px;
+}
+
+.teacher-intro{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.teacher-intro img{
+    border-radius: 50%;
+}
+
+.teacher-intro h2{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-left: -200px;
+}
+
+.teacher-intro h2 span{
+    color: #00cc99;
+}
+
+.teacher-intro li{
+    list-style-type: disc;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #9b9b9b;
+    margin-left: -100px;
+}
+
+.course-advantages{
+    margin-bottom: 50px;
+}
+
+.course-advantages li{
+    list-style-type: decimal;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2;
+    margin-left: 20px;
+}
+
+.syllabus-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.syllabus-list li{
+    width: 70%;
+    height: 50px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.syllabus-list li:nth-child(odd){
+    background: #ebebeb;
+}
+
+.syllabus-list li:nth-child(even){
+    color: #9b9b9b;
+}
+
+.sign-in-now{
+    height: 400px;
+    background: #ebebeb;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sign-in-now h2{
+    font-size: 35px;
+    line-height: 2;
+    margin-top: 120px;
+    margin-left: 100px;
+}
+
+.sign-in-now .sign-in-bottom{
+    font-size: 18px;
+    text-align: center;
+    width: 140px;
+    height: 20px;
+    margin-top: 200px;
+    margin-right: 180px;
+}
+
+.sign-in-now .sign-in-bottom i{
+    margin-left: 25px;
+}
 /*------------------*/
-
-
-
-
 
 /*------FAQ------*/
 
