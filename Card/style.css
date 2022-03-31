@@ -49,10 +49,11 @@ table {
 /*--------------------*/
 
 .back{
-    width: 100%;
-    height: 520px;
+    width: 1400px;
+    height: 550px;
     background: #00f5a8;
     padding-top: 200px;
+    margin: 0 auto;
     position: relative;
 }
 
