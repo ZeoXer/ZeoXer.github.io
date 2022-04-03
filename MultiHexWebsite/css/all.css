@@ -537,7 +537,24 @@ table {
     font-size: 22px;
     font-weight: 500;
     margin-left: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.Q-part i{
+    margin-left: 15px;
+}
+
+.fa-arrow-right{
+    opacity: 0;
+}
+
+.Q-part:hover{
+    cursor: pointer;
+}
+
+.Q-part:hover i{
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .A-part{
@@ -546,7 +563,8 @@ table {
     line-height: 1.5;
     color: #9b9b9b;
     margin-left: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    display: none;
 }
 
 .A-part span{
