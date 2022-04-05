@@ -544,7 +544,7 @@ table {
     margin-left: 15px;
 }
 
-.fa-arrow-right{
+.Q-part > .fa-arrow-right{
     opacity: 0;
 }
 
