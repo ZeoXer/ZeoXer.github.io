@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
@@ -153,14 +154,14 @@
         <div class="footer">
             <h2>對我們的課程有興趣嗎？<br>歡迎留下您的資料</h2>
             <form action="index.html" class="profile">
-                <div class="text-region"><textarea name="comment" cols="30" rows="10"></textarea></div>
+                <div class="text-region"><textarea name="comment" cols="30" rows="10" placeholder="有什麼想問的呢？"></textarea></div>
                 <div class="info-region">
                     <label for="person">姓名</label>
-                    <input type="text" name="person" id="person">
+                    <input type="text" name="person" id="person" placeholder="ex: 王大明">
                     <label for="phone">電話</label>
-                    <input type="text" name="phone" id="phone">
+                    <input type="text" name="phone" id="phone" placeholder="ex: 0912345678">
                     <label for="email">信箱</label>
-                    <input type="text" name="email" id="email">
+                    <input type="text" name="email" id="email" placeholder="ex: hexschool@gmail.com">
                     <input type="submit" value="送出" id="submit-btn">
                 </div>
 
@@ -174,10 +175,8 @@
             </div>
         </div>
     </div>
-    <div class="top">
-        <a href="#">
-            <h2>回頂端</h2>
-        </a>
+    <div class="animate__animated top">
+        <a href="#">回頂端</a>
     </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
