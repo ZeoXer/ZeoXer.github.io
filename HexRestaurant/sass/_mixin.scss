@@ -1,0 +1,14 @@
+@mixin hide-text {
+    text-indent: 110%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@mixin three-col-flex {
+    display: flex;
+    flex-wrap: wrap;
+    li{
+        width: 29.3333%;
+        margin: 0 2%;
+        text-align: center;
+    }   
+}

@@ -1,0 +1,179 @@
+* {
+    font-family: "Microsoft JhengHei", serif;
+}
+
+.banner-bg {
+    background: #000;
+}
+
+.primary-bg {
+    background: $primaryColor;
+}
+
+.secondary-bg {
+    background: $secondaryColor;
+}
+
+.third-bg {
+    background: $thirdColor;
+}
+
+.container {
+    max-width: 1048px;
+    margin: 0 auto;
+}
+
+.banner {
+    height: 420px;
+    background: url('../images/header_desktop.png') no-repeat;
+
+    .top-bar {
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba($color: #000000, $alpha: 0.75);
+
+        >a {
+            width: 120px;
+            height: 24px;
+            background: url('../images/logo_w.png') no-repeat;
+            background: url('../images/logo_w@svg.svg') no-repeat;
+            margin-left: 2%;
+            @include hide-text;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-evenly;
+            margin-right: 2%;
+
+            li {
+                margin: 0 15px;
+                padding: 5px;
+            }
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                font-size: $font-s;
+                color: $titleColor;
+            }
+
+            a:hover {
+                text-shadow: 1px 1px;
+                transition: .3s;
+            }
+        }
+    }
+
+    .title {
+        width: 460px;
+        margin: 0 auto;
+        text-align: center;
+        background: rgba($color: #000000, $alpha: 0.35);
+        padding-top: 20px;
+        padding-bottom: 26px;
+        margin-top: 67px;
+        color: $titleColor;
+
+        h1 {
+            font-size: $font-sl;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: $font-s;
+            line-height: 1.2;
+        }
+    }
+}
+
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    padding-top: $bottomSpace;
+    padding-bottom: $bottomSpace;
+
+    div{
+        width: 300px;
+
+        h2{
+            font-size: $font-l;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+    }
+
+    .about{
+        p{
+            font-size: $font-s;
+        }
+    }
+
+    .contact-us{
+        li{
+            list-style: disc;
+            font-size: $font-s;
+        }
+    }
+
+    .footer-logo{
+        width: 243px;
+        text-align: right;
+        a:first-child{
+            display: block;
+            height: 48px;
+            background: url("../images/logo_l.png") no-repeat;
+            background: url("../images/logo_l@svg.svg") no-repeat;
+            @include hide-text;
+            margin-bottom: 20px;
+        }
+        .fab{
+            font-size: $font-sl;
+            margin-left: 10px;
+            transition: all .3s;
+        }
+        .fab:hover{
+            opacity: 0.6;
+        }
+        .fa-google-plus-square{
+            color: #db4437;
+        }
+        .fa-twitter-square{
+            color: #41abe1;
+        }
+        .fa-facebook-square{
+            color: #3a5795;
+        }
+    }
+}
+
+.gray-btn {
+    color: #fff;
+    background: rgba($color: #000000, $alpha: 0.35);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: $font-s;
+    transition: all .3s;
+}
+
+.gray-btn:hover {
+    background: #d3d3d3;
+}
+
+.orange-btn {
+    color: #fff;
+    background: #f56c23;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: $font-s;
+    transition: all .3s;
+}
+
+.orange-btn:hover {
+    background: #f4a67d;
+}

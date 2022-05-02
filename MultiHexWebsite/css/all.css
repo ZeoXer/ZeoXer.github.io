@@ -230,7 +230,7 @@ table {
     margin-bottom: 60px;
 }
 
-.course-item{
+.course-item-region > li{
     width: 270px;
     border-radius: 5px;
     padding: 20px;
@@ -238,24 +238,24 @@ table {
     text-align: center;
 }
 
-.course-item:hover{
+.course-item-region > li:hover{
 	box-shadow: 0px 5px 15px grey;
 	transition: 0.5s;	
 }
 
-.course-item img{
+.course-item-region > li img{
     max-width: 100%;
     max-height: 100%;
 }
 
-.course-item h4{
+.course-item-region > li h4{
     font-size: 20px;
     font-weight: 400;
     padding: 15px 0;
     color: #4a4a4a;
 }
 
-.course-item p{
+.course-item-region > li p{
     font-size: 16px;
     line-height: 1.5;
     color: #9b9999;
