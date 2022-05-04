@@ -9,7 +9,7 @@
       src="https://kit.fontawesome.com/124325d2ef.js"
       crossorigin="anonymous"
     ></script>
-    <title>六角西餐廳 - 登入</title>
+    <title>六角西餐廳 - 註冊</title>
   </head>
   <body>
     <div class="side-bar">
@@ -31,9 +31,7 @@
                 <li><a href="./cart.html">線上點餐</a></li>
                 <li><a href="./login.html">登入</a></li>
               </ul>
-              <a href="#" class="mobile-links-open"
-                ><i class="fas fa-bars"></i
-              ></a>
+              <a href="#" class="mobile-links-open"><i class="fas fa-bars"></i></a>
             </div>
             <div class="title">
               <h1>咬一口就無法忘懷的漢堡</h1>
@@ -51,12 +49,27 @@
           <div class="container content-region">
             <h2 class="logo">六角西餐廳</h2>
             <h2>享受美食好味道</h2>
-            <div class="form-region login-region">
-              <h3>LOGIN</h3>
-              <form action="login.html" class="form-content">
-                <label for="email" class="email"
+            <div class="form-region register-region">
+              <h3>REGISTER</h3>
+              <div class="register-region-in">
+                <div class="protocol">
+                  <h3>就是這樣條款：</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                    nobis repellat minima! Eligendi cumque aliquam, exercitationem
+                    culpa eius id est dolorum aperiam eveniet. Ab, vero earum
+                    porro distinctio ipsam quam.
+                  </p>
+                </div>
+                <form action="./register.html" class="form-content">
+                  <label for="email" class="email"
                   >Email Address*
-                  <input type="email" name="email" id="email" required />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                  />
                 </label>
                 <label for="password" class="password"
                   >Password*
@@ -67,17 +80,19 @@
                     required
                   />
                 </label>
-                <div class="forget"><a href="#">忘記密碼？</a></div>
-                <div class="register-and-login">
-                  <button
-                    class="gray-btn"
-                    onclick="window.location.href='./register.html'"
-                  >
-                    註冊
-                  </button>
-                  <button type="submit" class="orange-btn">登入</button>
-                </div>
+                <label for="password-confirmed" class="password"
+                  >Password Confirmed*
+                  <input
+                    type="password"
+                    name="password-confirmed"
+                    id="password-confirmed"
+                    required
+                  />
+                </label>
+                <div class="forget"><a href="./login.html">已經有帳號了？</a></div>
+                <button type="submit" class="orange-btn">註冊</button>
               </form>
+              </div>
             </div>
           </div>
         </div>

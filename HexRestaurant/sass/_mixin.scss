@@ -1,14 +1,33 @@
 @mixin hide-text {
-    text-indent: 110%;
-    overflow: hidden;
-    white-space: nowrap;
+  text-indent: 110%;
+  overflow: hidden;
+  white-space: nowrap;
 }
+
 @mixin three-col-flex {
-    display: flex;
-    flex-wrap: wrap;
-    li{
-        width: 29.3333%;
-        margin: 0 2%;
-        text-align: center;
-    }   
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    width: 29.3333%;
+    margin: 0 2%;
+    text-align: center;
+  }
+}
+
+@mixin one-col-rwd {
+  li {
+    width: 90%;
+    margin: 30px 5%;
+  }
+}
+
+@mixin input-icon-pos($unicode) {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: $unicode;
+  position: absolute;
+  left: 10px;
+  bottom: 20%;
+  transform: translateY(-50%);
 }

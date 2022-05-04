@@ -1,0 +1,5 @@
+@mixin mobile-vertical {
+    @media (max-width: 415px) {
+        @content
+    }
+}
