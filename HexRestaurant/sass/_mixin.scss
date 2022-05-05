@@ -17,8 +17,8 @@
 
 @mixin one-col-rwd {
   li {
-    width: 90%;
-    margin: 30px 5%;
+    width: 80%;
+    margin: 30px 10%;
   }
 }
 
@@ -30,4 +30,21 @@
   left: 10px;
   bottom: 20%;
   transform: translateY(-50%);
+}
+
+@mixin ribbon-tag-frame($width, $height) {
+  width: $width;
+  height: $height;
+  overflow: hidden;
+  position: absolute;
+}
+
+@mixin ribbon-tag-main($width, $mainColor, $wordColor, $fontSize){
+  width: $width;
+  background: $mainColor;
+  transform: rotate(45deg);
+  text-align: center;
+  color: $wordColor;
+  font-size: $fontSize;
+  position: relative;
 }

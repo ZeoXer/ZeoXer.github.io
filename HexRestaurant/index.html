@@ -33,7 +33,9 @@
                 <li><a href="./cart.html">線上點餐</a></li>
                 <li><a href="./login.html">登入</a></li>
               </ul>
-              <a href="#" class="mobile-links-open"><i class="fas fa-bars"></i></a>
+              <a href="#" class="mobile-links-open"
+                ><i class="fas fa-bars"></i
+              ></a>
             </div>
             <div class="title">
               <h1>咬一口就無法忘懷的漢堡</h1>
@@ -157,15 +159,15 @@
             <div class="booking-info">
               <img src="./images/Map.png" alt="地圖" />
               <form action="index.html" class="booking-form">
-                <label for="person">姓名</label>
-                <input type="text" name="person" id="person" />
-                <label for="phone">電話</label>
-                <input type="tel" name="phone" id="phone" />
+                <label for="person">姓名*</label>
+                <input type="text" name="person" id="person" required />
+                <label for="phone">電話*</label>
+                <input type="tel" name="phone" id="phone" required />
                 <label for="email">信箱</label>
                 <input type="email" name="email" id="email" />
-                <label for="seats">人數</label>
-                <input type="number" name="seats" id="seats" min="1" />
-                <label for="vegetarian">是否需要素食</label>
+                <label for="seats">人數*</label>
+                <input type="number" name="seats" id="seats" min="1" required />
+                <label for="vegetarian">是否需要素食*</label>
                 <div>
                   <label for="vegetarian-yes"
                     >是<input
@@ -173,6 +175,7 @@
                       name="vegetarian"
                       id="vegetarian-yes"
                       value="yes"
+                      required
                   /></label>
                   <label for="vegetarian-no"
                     >否<input
@@ -180,6 +183,7 @@
                       name="vegetarian"
                       id="vegetarian-no"
                       value="no"
+                      required
                   /></label>
                 </div>
                 <div class="button-group">

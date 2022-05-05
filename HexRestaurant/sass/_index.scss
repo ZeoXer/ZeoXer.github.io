@@ -178,7 +178,7 @@
     .booking-form {
       display: flex;
       flex-direction: column;
-      @include mobile-vertical{
+      @include mobile-vertical {
         margin: 0 15px;
       }
 
@@ -188,14 +188,13 @@
       }
 
       input {
-        width: 460px;
+        width: 100%;
         height: 32px;
         border: 1px solid #979797;
         border-radius: 5px;
         padding: 5px 14px;
         margin-bottom: 15px;
         @include mobile-vertical {
-          width: 100%;
           height: 40px;
         }
       }
@@ -207,7 +206,7 @@
         height: 15px;
         margin: 0 10px;
         padding: 0;
-        @include mobile-vertical{
+        @include mobile-vertical {
           width: 20px;
           height: 20px;
           margin-right: 30px;
@@ -217,17 +216,19 @@
       .button-group {
         margin-top: 20px;
         margin-left: 300px;
-        @include mobile-vertical{
+        @include mobile-vertical {
           margin-left: 0;
           margin-top: 30px;
           display: flex;
           flex-direction: column-reverse;
         }
         button {
-          width: 100%;
-          height: 44px;
-          margin-bottom: 20px;
           cursor: pointer;
+          @include mobile-vertical {
+            width: 100%;
+            height: 44px;
+            margin-bottom: 20px;
+          }
         }
       }
     }
