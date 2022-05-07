@@ -146,7 +146,7 @@
       font-size: $font-sl;
       font-weight: bold;
       margin-bottom: 16px;
-      @include tablet-vertical{
+      @include tablet-vertical {
         font-size: $font-sl * 0.8;
       }
       @include mobile-vertical {
@@ -164,9 +164,6 @@
 .footer-info {
   display: flex;
   justify-content: space-between;
-  @include tablet-vertical{
-    margin: 0 3%;
-  }
   @include mobile-vertical {
     flex-direction: column;
     align-items: center;
@@ -176,7 +173,7 @@
 
   div {
     width: 28.6259%;
-    @include mobile-vertical{
+    @include mobile-vertical {
       width: 70%;
       margin: 0 15%;
       margin-bottom: 50px;
@@ -189,6 +186,7 @@
   }
 
   .about {
+    margin-left: 3%;
     p {
       font-size: $font-s;
     }
@@ -204,6 +202,7 @@
   .footer-logo {
     width: 243px;
     text-align: right;
+    margin-right: 3%;
     a:first-child {
       display: block;
       height: 48px;
@@ -291,7 +290,7 @@
   background: rgba($color: #000000, $alpha: 0.35);
   border: none;
   border-radius: 5px;
-  padding: 5px 20px;
+  padding: 5px 5px;
   font-size: $font-s;
   transition: all 0.3s;
 }
@@ -305,7 +304,7 @@
   background: #f56c23;
   border: none;
   border-radius: 5px;
-  padding: 5px 20px;
+  padding: 5px 5px;
   font-size: $font-s;
   transition: all 0.3s;
 }

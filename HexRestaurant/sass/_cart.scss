@@ -9,6 +9,7 @@
     width: 18%;
     margin-right: 2%;
     @include tablet-vertical{
+      width: 22%;
       margin: 0 2%;
     }
     @include mobile-vertical {
@@ -21,6 +22,12 @@
       font-weight: bold;
       color: $secondaryColor;
       margin-bottom: 16px;
+      @include tablet-vertical{
+        font-size: $font-l;
+      }
+      @include mobile-vertical{
+        font-size: $font-l;
+      }
       .fa-leaf {
         margin-right: 5px;
       }
@@ -50,7 +57,7 @@
   .product-region {
     width: 78%;
     @include tablet-vertical{
-      width: 76%;
+      width: 72%;
       margin-right: 2%;
     }
     @include mobile-vertical {
@@ -82,7 +89,7 @@
           background: $primaryColor;
           border: 3px solid $secondaryColor;
           padding: 5px 5px;
-          @include mobile-vertical{
+          @include tablet-vertical{
             border-radius: 0;
           }
         }
@@ -97,6 +104,9 @@
           background: $secondaryColor;
           border: 3px solid $secondaryColor;
           cursor: pointer;
+          @include tablet-vertical{
+            width: 35px;
+          }
         }
       }
       .check-and-cart {
@@ -140,6 +150,9 @@
     }
     .product-list {
       @include three-col-flex;
+      @include tablet-vertical{
+        @include two-col-rwd;
+      }
       @include mobile-vertical{
         @include one-col-rwd
       }

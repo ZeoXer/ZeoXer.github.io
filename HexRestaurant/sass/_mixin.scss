@@ -18,7 +18,7 @@
 @mixin one-col-rwd {
   li {
     width: 80%;
-    margin: 30px 10%;
+    margin: 0 10%;
   }
 }
 
@@ -47,4 +47,11 @@
   color: $wordColor;
   font-size: $fontSize;
   position: relative;
+}
+
+@mixin two-col-rwd {
+  li{
+    width: 46%;
+    margin: 0 2%;
+  }
 }
