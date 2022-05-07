@@ -14,6 +14,8 @@ $(document).ready(function () {
         e.preventDefault();
         $(this).find('.fa-heart').toggleClass('far');
         $(this).find('.fa-heart').toggleClass('fas');
+        $(this).find('.fa-heart').toggleClass('animate__pulse');
+        $('.animate__pulse').css('animation-duration', '0.6s');
     });
 
     $('.category-list > li').click(function (e) { 

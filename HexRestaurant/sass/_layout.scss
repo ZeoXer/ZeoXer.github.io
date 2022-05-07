@@ -146,6 +146,9 @@
       font-size: $font-sl;
       font-weight: bold;
       margin-bottom: 16px;
+      @include tablet-vertical{
+        font-size: $font-sl * 0.8;
+      }
       @include mobile-vertical {
         font-size: $font-l;
       }
@@ -161,6 +164,9 @@
 .footer-info {
   display: flex;
   justify-content: space-between;
+  @include tablet-vertical{
+    margin: 0 3%;
+  }
   @include mobile-vertical {
     flex-direction: column;
     align-items: center;
@@ -169,11 +175,12 @@
   padding-bottom: $bottomSpace;
 
   div {
-    width: 300px;
-    @include mobile-vertical {
-      margin: 30px 0;
+    width: 28.6259%;
+    @include mobile-vertical{
+      width: 70%;
+      margin: 0 15%;
+      margin-bottom: 50px;
     }
-
     h2 {
       font-size: $font-l;
       font-weight: bold;

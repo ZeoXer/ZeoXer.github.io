@@ -8,6 +8,9 @@
   .product-category {
     width: 18%;
     margin-right: 2%;
+    @include tablet-vertical{
+      margin: 0 2%;
+    }
     @include mobile-vertical {
       width: 90%;
       margin: 0 5%;
@@ -45,9 +48,14 @@
   }
 
   .product-region {
-    width: 80%;
+    width: 78%;
+    @include tablet-vertical{
+      width: 76%;
+      margin-right: 2%;
+    }
     @include mobile-vertical {
       width: 100%;
+      margin: 0;
     }
     .search-and-cart {
       display: flex;
@@ -74,6 +82,9 @@
           background: $primaryColor;
           border: 3px solid $secondaryColor;
           padding: 5px 5px;
+          @include mobile-vertical{
+            border-radius: 0;
+          }
         }
         input:focus {
           outline: none;
@@ -156,7 +167,7 @@
             border-left: 7.2px solid #078f6d;
             border-right: 7.2px solid transparent;
             position: absolute;
-            bottom: -15px;
+            bottom: -14px;
             left: 1.8px;
           }
           .tag-words::after{
@@ -167,7 +178,7 @@
             border-right: 7.2px solid #078f6d;
             position: absolute;
             top: 30px;
-            right: 4px;
+            right: 4.5px;
           }
         }
         .love-it {
