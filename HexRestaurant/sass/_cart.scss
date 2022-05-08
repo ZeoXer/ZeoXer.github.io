@@ -150,12 +150,6 @@
     }
     .product-list {
       @include three-col-flex;
-      @include tablet-vertical{
-        @include two-col-rwd;
-      }
-      @include mobile-vertical{
-        @include one-col-rwd
-      }
       li {
         box-shadow: 5px 5px 10px #979797;
         padding-bottom: 16px;
@@ -249,6 +243,12 @@
           background: $orangeBtnColor;
           color: $primaryColor;
         }
+      }
+      @include tablet-vertical{
+        @include two-col-rwd;
+      }
+      @include mobile-vertical{
+        @include one-col-rwd
       }
     }
   }
