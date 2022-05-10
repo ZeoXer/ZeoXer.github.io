@@ -18,7 +18,8 @@
 @mixin one-col-rwd {
   li {
     width: 80%;
-    margin: 20px 10%;
+    margin: 0 10%;
+    margin-bottom: 30px;
   }
 }
 
@@ -53,5 +54,6 @@
   li{
     width: 46%;
     margin: 0 2%;
+    margin-bottom: 30px;
   }
 }

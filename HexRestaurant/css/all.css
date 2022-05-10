@@ -613,7 +613,8 @@ img {
 @media (max-width: 415px) {
   .intro .intro-items li {
     width: 80%;
-    margin: 20px 10%;
+    margin: 0 10%;
+    margin-bottom: 30px;
   }
 }
 
@@ -747,7 +748,8 @@ img {
 @media (max-width: 415px) {
   .comment .comment-items li {
     width: 80%;
-    margin: 20px 10%;
+    margin: 0 10%;
+    margin-bottom: 30px;
   }
 }
 
@@ -1290,13 +1292,15 @@ img {
   .product .product-region .product-list li {
     width: 46%;
     margin: 0 2%;
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 415px) {
   .product .product-region .product-list li {
     width: 80%;
-    margin: 20px 10%;
+    margin: 0 10%;
+    margin-bottom: 30px;
   }
 }
 
