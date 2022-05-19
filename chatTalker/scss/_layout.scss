@@ -1,0 +1,30 @@
+.bg-home{
+    width: 850px;
+    height: 770px;
+    background: url("../images/bg_home.svg") no-repeat;
+    z-index: -100;
+}
+
+.bg-ball-1{
+    width: 361px;
+    height: 361px;
+    background: url("../images/ball01.svg") no-repeat;
+    transform: translateX(-70%);
+    top: 590px;
+}
+
+.bg-ball-2{
+    width: 317px;
+    height: 317px;
+    background: url("../images/ball02.svg") no-repeat;
+    right: 0;
+    top: 1820px;
+    transform: translateX(50%);
+}
+
+.logo{
+    width: 360px;
+    height: 66px;
+    background: url("../images/logo.png");
+    @include hide-text;
+}
