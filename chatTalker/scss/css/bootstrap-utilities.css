@@ -19,11 +19,11 @@
 }
 
 .link-secondary {
-  color: #6c757d;
+  color: #FFD153;
 }
 
 .link-secondary:hover, .link-secondary:focus {
-  color: #565e64;
+  color: #ffda75;
 }
 
 .link-success {
@@ -35,11 +35,11 @@
 }
 
 .link-info {
-  color: #0dcaf0;
+  color: #F5F5F5;
 }
 
 .link-info:hover, .link-info:focus {
-  color: #3dd5f3;
+  color: #f7f7f7;
 }
 
 .link-warning {
@@ -72,6 +72,22 @@
 
 .link-dark:hover, .link-dark:focus {
   color: #1b1819;
+}
+
+.link-lightGray {
+  color: #DDDDDD;
+}
+
+.link-lightGray:hover, .link-lightGray:focus {
+  color: #e4e4e4;
+}
+
+.link-skyBlue {
+  color: #F7F9FD;
+}
+
+.link-skyBlue:hover, .link-skyBlue:focus {
+  color: #f9fafd;
 }
 
 .ratio {
@@ -513,7 +529,7 @@
 }
 
 .border-secondary {
-  border-color: #6c757d !important;
+  border-color: #FFD153 !important;
 }
 
 .border-success {
@@ -521,7 +537,7 @@
 }
 
 .border-info {
-  border-color: #0dcaf0 !important;
+  border-color: #F5F5F5 !important;
 }
 
 .border-warning {
@@ -538,6 +554,14 @@
 
 .border-dark {
   border-color: #221E1F !important;
+}
+
+.border-lightGray {
+  border-color: #DDDDDD !important;
+}
+
+.border-skyBlue {
+  border-color: #F7F9FD !important;
 }
 
 .border-white {
@@ -1452,6 +1476,16 @@
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-lightGray {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-lightGray-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-skyBlue {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-skyBlue-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
@@ -1541,6 +1575,16 @@
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-lightGray {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-lightGray-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-skyBlue {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-skyBlue-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {

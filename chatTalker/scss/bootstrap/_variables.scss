@@ -67,26 +67,28 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #56C4C5 !default;
+$secondary:     #FFD153 !default;
 $success:       $green !default;
-$info:          $cyan !default;
+$info:          #F5F5F5 !default;
 $warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$danger:        #FF5D50 !default;
+$light:         #747474 !default;
+$dark:          #F7F9FD !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    #56C4C5,
-  "secondary":  $secondary,
+  "secondary":  #FFD153,
   "success":    $success,
-  "info":       $info,
+  "info":       #F5F5F5,
   "warning":    $warning,
   "danger":     #FF5D50,
   "light":      #747474,
-  "dark":       #221E1F
+  "dark":       #221E1F,
+  "lightGray":  #DDDDDD,
+  "skyBlue":    #F7F9FD
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -1082,7 +1084,7 @@ $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
-$nav-link-color:                    $link-color !default;
+$nav-link-color:                    $primary !default;
 $nav-link-hover-color:              $link-hover-color !default;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           $gray-600 !default;
@@ -1288,20 +1290,20 @@ $accordion-button-padding-x:              $accordion-padding-x !default;
 $accordion-button-color:                  $accordion-color !default;
 $accordion-button-bg:                     $accordion-bg !default;
 $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
-$accordion-button-active-bg:              tint-color($component-active-bg, 90%) !default;
-$accordion-button-active-color:           shade-color($primary, 10%) !default;
+$accordion-button-active-bg:              $white !default;
+$accordion-button-active-color:           $primary !default;
 
 $accordion-button-focus-border-color:     $input-focus-border-color !default;
 $accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
 
 $accordion-icon-width:                    1.25rem !default;
 $accordion-icon-color:                    $accordion-button-color !default;
-$accordion-icon-active-color:             $accordion-button-active-color !default;
+$accordion-icon-active-color:             $primary !default;
 $accordion-icon-transition:               transform .2s ease-in-out !default;
 $accordion-icon-transform:                rotate(-180deg) !default;
 
-$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
-$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+$accordion-button-icon:         url("../../images/icon_plus.svg") !default;
+$accordion-button-active-icon:  url("../../images/icon_minus.svg") !default;
 // scss-docs-end accordion-variables
 
 // Tooltips

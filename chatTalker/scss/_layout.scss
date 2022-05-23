@@ -2,7 +2,7 @@
     width: 850px;
     height: 770px;
     background: url("../images/bg_home.svg") no-repeat;
-    z-index: -100;
+    z-index: -10;
 }
 
 .bg-ball-1{
@@ -13,18 +13,39 @@
     top: 590px;
 }
 
-.bg-ball-2{
-    width: 317px;
-    height: 317px;
-    background: url("../images/ball02.svg") no-repeat;
+.bg-ball-2-frame{
     right: 0;
-    top: 1820px;
-    transform: translateX(50%);
+    top: 1760px;
+    overflow: hidden;
+    .bg-ball-2{
+        width: 317px;
+        height: 317px;
+        background: url("../images/ball02.svg") no-repeat;
+        transform: translateX(30%);
+    }
+}
+
+.bg-ball-3{
+    width: 153px;
+    height: 153px;
+    background: url("../images/ball03.svg") no-repeat;
+    left: 20px;
+    top: 2740px;
+}
+
+.bg-skyBlue{
+    height: 470px;
+    border-bottom-left-radius: 300px;
 }
 
 .logo{
-    width: 360px;
-    height: 66px;
-    background: url("../images/logo.png");
-    @include hide-text;
+    width: 218px;
+    height: 40px;
+}
+
+.footer-bg{
+    height: 503px;
+    background: url("../images/home_footer.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
 }
