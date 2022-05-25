@@ -382,6 +382,12 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  32: $spacer * 2,
+  40: 40px,
+  60: 60px,
+  100: 100px,
+  200: 200px,
+  240: 240px
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -616,7 +622,10 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  12: $font-size-base * 0.75,
+  18: $font-size-base * 1.125,
+  48: $font-size-base * 3
 ) !default;
 // scss-docs-end font-sizes
 

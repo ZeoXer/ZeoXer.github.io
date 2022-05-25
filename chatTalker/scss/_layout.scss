@@ -1,51 +1,58 @@
-.bg-home{
-    width: 850px;
-    height: 770px;
-    background: url("../images/bg_home.svg") no-repeat;
-    z-index: -10;
+.bg-home {
+  width: 850px;
+  height: 770px;
+  background: url("../images/bg_home.svg") no-repeat;
+  z-index: -10;
 }
 
-.bg-ball-1{
-    width: 361px;
-    height: 361px;
-    background: url("../images/ball01.svg") no-repeat;
-    transform: translateX(-70%);
-    top: 590px;
+.bg-home-sm{
+  width: 347px;
+  height: 306px;
+  background: url("../images/bg_home_sm.svg") no-repeat;
+  background-position: 0 bottom;
+  z-index: -10;
 }
 
-.bg-ball-2-frame{
-    right: 0;
-    top: 1760px;
-    overflow: hidden;
-    .bg-ball-2{
-        width: 317px;
-        height: 317px;
-        background: url("../images/ball02.svg") no-repeat;
-        transform: translateX(30%);
-    }
+.bg-ball-1 {
+  background: url("../images/ball01.svg") no-repeat;
+  background-size: cover;
 }
 
-.bg-ball-3{
-    width: 153px;
-    height: 153px;
-    background: url("../images/ball03.svg") no-repeat;
-    left: 20px;
-    top: 2740px;
+.bg-ball-2 {
+  background: url("../images/ball02.svg") no-repeat;
+  background-size: cover;
 }
 
-.bg-skyBlue{
-    height: 470px;
-    border-bottom-left-radius: 300px;
+.bg-ball-3 {
+  background: url("../images/ball03.svg") no-repeat;
+  background-size: cover;
 }
 
-.logo{
-    width: 218px;
-    height: 40px;
+.bg-skyBlue {
+  height: 470px;
+  border-bottom-left-radius: 300px;
 }
 
-.footer-bg{
-    height: 503px;
-    background: url("../images/home_footer.svg") no-repeat;
-    background-size: cover;
-    background-position: center;
+.logo {
+  width: 218px;
+  height: 40px;
+  @include mobile-vertical{
+    width: 130px;
+    height: 24px;
+  }
+}
+
+.footer-bg {
+  height: 503px;
+  background: url("../images/home_footer.svg") no-repeat;
+  @include mobile-vertical{
+    background: url("../images/footer_sm.svg") no-repeat;
+  }
+  background-size: cover;
+  background-position: center;
+}
+
+.back-to-top:hover {
+  transition: 0.5s;
+  animation: pulse 0.8s infinite;
 }
