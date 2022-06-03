@@ -28,16 +28,16 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #56C4C5;
-  --bs-secondary: #FFD153;
+  --bs-primary: #56c4c5;
+  --bs-secondary: #ffd153;
   --bs-success: #198754;
-  --bs-info: #F5F5F5;
+  --bs-info: #f5f5f5;
   --bs-warning: #ffc107;
-  --bs-danger: #FF5D50;
+  --bs-danger: #ff5d50;
   --bs-light: #747474;
-  --bs-dark: #221E1F;
-  --bs-lightGray: #DDDDDD;
-  --bs-skyBlue: #F7F9FD;
+  --bs-dark: #221e1f;
+  --bs-lightGray: #dddddd;
+  --bs-skyBlue: #f7f9fd;
   --bs-primary-rgb: 86, 196, 197;
   --bs-secondary-rgb: 255, 209, 83;
   --bs-success-rgb: 25, 135, 84;
@@ -59,7 +59,7 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #221E1F;
+  --bs-body-color: #221e1f;
   --bs-body-bg: #fff;
 }
 
@@ -238,7 +238,7 @@ sup {
 }
 
 a {
-  color: #56C4C5;
+  color: #56c4c5;
   text-decoration: underline;
 }
 

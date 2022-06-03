@@ -53,9 +53,6 @@
 .footer-bg {
   height: 503px;
   background: url("../images/home_footer.svg") no-repeat;
-  @include md{
-    background: url("../images/footer_sm.svg") no-repeat;
-  }
   background-size: cover;
   background-position: center;
 }
