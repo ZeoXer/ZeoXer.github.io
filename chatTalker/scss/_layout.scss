@@ -16,27 +16,35 @@
 .bg-ball-1 {
   background: url("../images/ball01.svg") no-repeat;
   background-size: cover;
+  background-position: right;
 }
 
 .bg-ball-2 {
   background: url("../images/ball02.svg") no-repeat;
   background-size: cover;
+  z-index: -10;
 }
 
 .bg-ball-3 {
   background: url("../images/ball03.svg") no-repeat;
   background-size: cover;
+  background-position: right;
+  z-index: -99;
 }
 
 .bg-skyBlue {
   height: 470px;
   border-bottom-left-radius: 300px;
+  z-index: -10;
+  @include md {
+    border-bottom-left-radius: 200px;
+  }
 }
 
 .logo {
   width: 218px;
   height: 40px;
-  @include mobile-vertical{
+  @include md{
     width: 130px;
     height: 24px;
   }
@@ -45,7 +53,7 @@
 .footer-bg {
   height: 503px;
   background: url("../images/home_footer.svg") no-repeat;
-  @include mobile-vertical{
+  @include md{
     background: url("../images/footer_sm.svg") no-repeat;
   }
   background-size: cover;

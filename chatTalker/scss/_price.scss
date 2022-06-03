@@ -1,9 +1,15 @@
-.price-banner-img{
-    width: 885px;
-    height: 546px;
-    background: url("../images/banner.svg") no-repeat;
+.price-banner-img {
+  width: 885px;
+  height: 546px;
+  background: url("../images/banner.svg") no-repeat;
 }
 
-.price-link{
-    z-index: 10;
+.price-banner-img-sm {
+  width: 375px;
+  height: 495px;
+  background: url("../images/banner_sm.svg") no-repeat;
+}
+
+.price-link {
+  z-index: 10;
 }

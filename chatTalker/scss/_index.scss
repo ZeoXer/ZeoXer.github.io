@@ -1,7 +1,7 @@
 .home-banner-img{
   height: 647px;
   background: url("../images/home.svg") no-repeat;
-  @include mobile-vertical{
+  @include md{
     height: 306px;
     background-position: center;
   }
