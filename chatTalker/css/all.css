@@ -14547,6 +14547,10 @@ fieldset:disabled .btn {
   top: 240vh;
 }
 
+.top-500vh {
+  top: 500vh;
+}
+
 .top-870 {
   top: 870px;
 }
