@@ -14547,16 +14547,16 @@ fieldset:disabled .btn {
   top: 240vh;
 }
 
-.top-500vh {
-  top: 500vh;
-}
-
 .top-870 {
   top: 870px;
 }
 
 .top-1760 {
   top: 1760px;
+}
+
+.top-3340 {
+  top: 3340px;
 }
 
 .left-20 {
