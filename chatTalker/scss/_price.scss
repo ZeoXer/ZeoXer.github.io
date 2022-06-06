@@ -2,6 +2,10 @@
   width: 885px;
   height: 546px;
   background: url("../images/banner.svg") no-repeat;
+  @include lg{
+    height: 631px;
+    background-position: 0px 85px;
+  }
 }
 
 .price-link {

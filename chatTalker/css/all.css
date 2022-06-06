@@ -14790,6 +14790,13 @@ body {
   background: url("../images/banner.svg") no-repeat;
 }
 
+@media (max-width: 992px) {
+  .price-banner-img {
+    height: 631px;
+    background-position: 0px 85px;
+  }
+}
+
 .price-link {
   z-index: 10;
 }
