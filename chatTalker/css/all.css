@@ -14747,7 +14747,7 @@ body {
   background: url("../images/home.svg") no-repeat;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .home-banner-img {
     height: 306px;
     background-position: center;
