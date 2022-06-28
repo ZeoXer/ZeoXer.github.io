@@ -36,3 +36,29 @@
   width: 16px;
   height: 10px;
 }
+
+:root {
+  --swiper-theme-color: #ffd153;
+}
+
+.swiper {
+  padding: 60px 16px 0 0;
+}
+
+.swiper-wrapper {
+  padding: 0 0 0 8px;
+}
+
+.swiper-slide {
+  height: initial;
+}
+
+.swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 8px;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 24px;
+}

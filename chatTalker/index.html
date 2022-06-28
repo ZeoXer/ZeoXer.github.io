@@ -20,6 +20,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/all.css" />
     <title>首頁 - chatTalker</title>
   </head>
@@ -118,7 +122,9 @@
           <h5 class="mb-5">
             量身打造您想要的專屬服務，幫助您迅速判斷成效，並加快決策
           </h5>
-          <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 list-unstyled">
+          <ul
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 list-unstyled"
+          >
             <li class="col px-5 px-lg-2">
               <div class="card h-100 bdrs-20 shadow">
                 <img
@@ -271,10 +277,10 @@
             class="bg-ball-3 position-absolute w-153 h-153 left-20 top-10 left-n-75"
           ></div>
           <h2 class="fw-bold text-center mb-100">好評如潮</h2>
-          <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-3 list-unstyled mb-lg-4">
-            <li class="col">
-              <div
-                class="card border-0 shadow bdrs-20 pt-5 py-4 position-relative"
+          <div class="swiper" id="comment-swiper">
+            <ul class="list-unstyled mb-lg-4 swiper-wrapper">
+              <li
+                class="swiper-slide card border-0 shadow bdrs-20 pt-5 py-4 position-relative"
               >
                 <img
                   src="./images/user01.jpg"
@@ -319,11 +325,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </li>
-            <li class="col">
-              <div
-                class="card border-0 shadow bdrs-20 pt-5 py-4 position-relative d-none d-md-block"
+              </li>
+              <li
+                class="swiper-slide card border-0 shadow bdrs-20 pt-5 py-4 position-relative"
               >
                 <img
                   src="./images/user02.jpg"
@@ -368,11 +372,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </li>
-            <li class="col">
-              <div
-                class="card border-0 shadow bdrs-20 pt-5 py-4 position-relative d-none d-lg-block"
+              </li>
+              <li
+                class="swiper-slide card border-0 shadow bdrs-20 pt-5 py-4 position-relative"
               >
                 <img
                   src="./images/user03.jpg"
@@ -417,15 +419,63 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-          <div class="pages d-flex justify-content-center">
+              </li>
+              <li
+                class="swiper-slide card border-0 shadow bdrs-20 pt-5 py-4 position-relative"
+              >
+                <img
+                  src="./images/user04.jpg"
+                  class="user-img rounded-circle position-absolute top-n-52 left-32"
+                  alt="用戶4"
+                />
+                <div class="card-body px-32">
+                  <p class="card-text pb-4 border-bottom border-lightGray mb-4">
+                    這個東西真的是太神啦！大大的幫助我經營實況，也讓我和觀眾的互動變得更好了！謝謝chatTalker帶給我這麼多的幫助！
+                  </p>
+                  <h6 class="card-title fw-bold">實況主</h6>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p class="card-text mb-0">攤手哥</p>
+                    <div class="d-flex">
+                      <img
+                        src="./images/icon_star.svg"
+                        class="star-img"
+                        alt=""
+                      />
+                      <img
+                        src="./images/icon_star.svg"
+                        class="star-img ms-2"
+                        alt=""
+                      />
+                      <img
+                        src="./images/icon_star.svg"
+                        class="star-img ms-2"
+                        alt=""
+                      />
+                      <img
+                        src="./images/icon_star.svg"
+                        class="star-img ms-2"
+                        alt=""
+                      />
+                      <img
+                        src="./images/icon_star.svg"
+                        class="star-img ms-2"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- <div class="pages d-flex justify-content-center">
             <a href="#" class="other-page bg-lightGray rounded-circle mx-1"></a>
             <a href="#" class="other-page bg-lightGray rounded-circle mx-1"></a>
             <a href="#" class="other-page bg-lightGray rounded-circle mx-1"></a>
             <a href="#" class="recent-page bg-secondary rounded-pill mx-1"></a>
-          </div>
+          </div> -->
         </div>
       </section>
     </div>
@@ -460,6 +510,7 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/all.js"></script>
   </body>
