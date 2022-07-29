@@ -282,7 +282,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
+  margin: 20px 0;
   padding-left: 5px;
   padding-right: 10px;
 }
