@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+@import url("https://fonts.googleapis.com/css?family=Baloo+Tamma+2:600, 700");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.bg {
+  position: absolute;
+  background: #FFD370;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+  background-image: linear-gradient(174deg, #FFD370 2%, #FFD370 46%, #ffffff 46%, #ffffff 100%, #e8e8e8 100%);
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (max-width: 414px) {
+  .container {
+    margin: 0 5%;
+  }
+}
+
+.title {
+  font-family: "Baloo Tamma 2";
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.add-new-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.new-item {
+  width: 100%;
+  height: 48px;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 15px;
+  -webkit-box-shadow: gray 0 0 5px;
+          box-shadow: gray 0 0 5px;
+  border: none;
+  outline: none;
+}
+
+.add-button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  font-size: 32px;
+  border-radius: 10px;
+  color: #fff;
+  background: #333333;
+  line-height: 40px;
+  top: 4px;
+  right: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.add-button:hover {
+  background: #FFD370;
+  color: #333333;
+}
+
+.item-region {
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+  -webkit-box-shadow: gray 0 0 5px;
+          box-shadow: gray 0 0 5px;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.item-region-working {
+  opacity: 1;
+}
+
+.item-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.category-option {
+  width: 33.333%;
+  text-align: center;
+  border-bottom: 3px solid #EFEFEF;
+}
+
+.category-option a {
+  display: block;
+  padding: 5px 0;
+  font-weight: bold;
+  color: #9F9A91;
+}
+
+.category-option:hover {
+  border-bottom: 3px solid #333333;
+}
+
+.active {
+  border-bottom-color: #333333;
+}
+
+.active > a {
+  color: #333333;
+}
+
+.item-list {
+  margin-bottom: 20px;
+}
+
+.item-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.item-list li label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding-left: 40px;
+  width: 100%;
+}
+
+.item-list li label input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.item-list li label input[type="checkbox"]:checked ~ span {
+  color: #9F9A91;
+  text-decoration: line-through;
+}
+
+.item-list li label input[type="checkbox"]:checked ~ span::before {
+  border-color: transparent;
+  -webkit-transform: translateY(-50%) scale(0);
+          transform: translateY(-50%) scale(0);
+}
+
+.item-list li label input[type="checkbox"]:checked ~ span::after {
+  opacity: 1;
+}
+
+.item-list li label span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%) scale(1);
+          transform: translateY(-50%) scale(1);
+  height: 24px;
+  width: 24px;
+  border-radius: 5px;
+  border: 1px solid #333333;
+  pointer-events: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.item-list li label span::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: -22%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  height: 20px;
+  width: 10px;
+  border-radius: 1px;
+  border-bottom: 3px solid #FFD370;
+  border-right: 3px solid #FFD370;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.delete-item {
+  width: 20px;
+  height: 20px;
+  background: url("../delete-button.jpg") no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  border: none;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (max-width: 414px) {
+  .delete-item {
+    opacity: 1;
+  }
+}
+
+.delete-item:hover {
+  opacity: 1;
+}
+
+.item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5px;
+}
+
+.num-info {
+  font-weight: bold;
+}
+
+.clear-all-finished {
+  color: #9F9A91;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.clear-all-finished:hover {
+  color: #333333;
+}
