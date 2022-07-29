@@ -105,7 +105,12 @@ item_list.addEventListener("click", (e) => {
   } else {
     all_item[item_numId].state = "";
   }
-  renderDataByCategory();
+  const all_category = document.querySelectorAll(".category-option");
+  all_category.forEach((ele) => {
+    ele.setAttribute("class", "category-option");
+  });
+  all_category[0].setAttribute("class", "category-option active");
+  renderData(all_item);
 });
 
 // 清除所有已完成項目
