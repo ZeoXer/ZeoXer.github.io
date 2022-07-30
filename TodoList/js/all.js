@@ -27,22 +27,46 @@ item_category.addEventListener("click", (e) => {
   renderDataByCategory();
 });
 
+function renderUncheckedData() {
+  renderData();
+  const items = document.querySelectorAll(".item-list li");
+  items.forEach((ele) => {
+    if (ele.getAttribute("data-state") == "checked"){
+      ele.style.display = "none";
+    } else {
+      ele.style.display = "flex";
+    }
+  })
+}
+
+function renderCheckedData() {
+  renderData();
+  const items = document.querySelectorAll(".item-list li");
+  items.forEach((ele) => {
+    if (ele.getAttribute("data-state") == "unchecked"){
+      ele.style.display = "none";
+    } else {
+      ele.style.display = "flex";
+    }
+  })
+}
+
 // 更動事項數目
 const item_num = document.querySelector("#num-info em");
 
 function setNumberOfItem() {
   let count = 0;
   all_item.forEach((ele) => {
-    if (ele.state == "") count++;
+    if (ele.state == "unchecked") count++;
   });
   item_num.textContent = count;
 }
 
 // 初始化
-function renderData(item) {
+function renderData() {
   let str = "";
-  item.forEach((ele, idx) => {
-    str += `<li>
+  all_item.forEach((ele, idx) => {
+    str += `<li style="display: flex" data-state="${ele.state}">
       <label>
       <input type="checkbox" data-numId="${idx}" ${ele.state}/>
       <span>${ele.content}</span>
@@ -51,8 +75,6 @@ function renderData(item) {
     </li>`;
   });
   item_list.innerHTML = str;
-  checked_item = all_item.filter((ele) => ele.state == "checked");
-  unchecked_item = all_item.filter((ele) => ele.state == "");
   setNumberOfItem();
   hideList();
 }
@@ -61,11 +83,11 @@ renderData(all_item);
 function renderDataByCategory() {
   const active_category = document.querySelector(".active");
   if (active_category.textContent == "全部") {
-    renderData(all_item);
+    renderData();
   } else if (active_category.textContent == "待完成") {
-    renderData(unchecked_item);
+    renderUncheckedData();
   } else {
-    renderData(checked_item);
+    renderCheckedData();
   }
 }
 
@@ -81,7 +103,7 @@ add_button.addEventListener("click", (e) => {
   }
   obj = {
     content: new_item_value,
-    state: "",
+    state: "unchecked",
   };
   all_item.push(obj);
   renderDataByCategory();
@@ -100,23 +122,18 @@ item_list.addEventListener("click", (e) => {
 item_list.addEventListener("click", (e) => {
   if (e.target.type != "checkbox") return;
   let item_numId = e.target.getAttribute("data-numId");
-  if (all_item[item_numId].state == "") {
+  if (all_item[item_numId].state == "unchecked") {
     all_item[item_numId].state = "checked";
   } else {
-    all_item[item_numId].state = "";
+    all_item[item_numId].state = "unchecked";
   }
-  const all_category = document.querySelectorAll(".category-option");
-  all_category.forEach((ele) => {
-    ele.setAttribute("class", "category-option");
-  });
-  all_category[0].setAttribute("class", "category-option active");
-  renderData(all_item);
+  renderDataByCategory();
 });
 
 // 清除所有已完成項目
 const clear_all_button = document.getElementById("clear-all-finished");
 
 clear_all_button.addEventListener("click", (e) => {
-  all_item = all_item.filter((ele) => ele.state == "");
+  all_item = all_item.filter((ele) => ele.state == "unchecked");
   renderDataByCategory();
 });
