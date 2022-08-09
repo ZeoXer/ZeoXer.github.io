@@ -127,7 +127,7 @@ item_list.addEventListener("click", (e) => {
   } else {
     all_item[item_numId].state = "unchecked";
   }
-  renderDataByCategory();
+  const timeout = setTimeout(renderDataByCategory, 300);
 });
 
 // 清除所有已完成項目
