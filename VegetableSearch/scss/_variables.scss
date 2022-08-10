@@ -1,0 +1,30 @@
+$font-m: 20px;
+$font-ms: $font-m * 0.8;
+$font-s: $font-m * 0.6;
+$primary-1: #899e39;
+$primary-2: #f8d45a;
+$dark: #2a2a2a;
+$light: #f4f1ea;
+$light-gray: #d9d9d9;
+
+.bold {
+  font-weight: bold;
+}
+
+@mixin hide-text {
+  text-indent: 110%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin mobile-size {
+  @media (max-width: 415px) {
+    @content;
+  }
+}
+
+@mixin tablet-size {
+  @media (max-width: 912px) {
+    @content;
+  }
+}

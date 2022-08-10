@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/vegetable.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/all.css" />
+    <script
+      src="https://kit.fontawesome.com/124325d2ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>蔬菜比價網</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1><a href="#" class="logo">蔬菜比價網</a></h1>
+      <div class="main">
+        <ul class="switch-category" id="switch-category">
+          <li><a href="#">蔬菜</a></li>
+          <li><a href="#">水果</a></li>
+          <li><a href="#">花卉</a></li>
+        </ul>
+        <div class="search-bar">
+          <label for="search-name">作物名稱</label>
+          <input type="text" id="search-name" placeholder="請輸入作物名稱" />
+          <input type="button" id="search-btn" value="搜尋" />
+        </div>
+        <div class="data-info">
+          <h2 id="show-search-name"></h2>
+          <select name="render-data" class="render-data">
+            <option value="" selected disabled hidden>排序篩選</option>
+            <option value="up">依上價排序</option>
+            <option value="mid">依中價排序</option>
+            <option value="down">依下價排序</option>
+            <option value="avg">依平均價排序</option>
+            <option value="amount">依交易量排序</option>
+          </select>
+        </div>
+        <table>
+          <thead class="result-thead">
+            <th>作物<span>名稱</span></th>
+            <th>市場<span>名稱</span></th>
+            <th>
+              上價
+              <div class="switch-order">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-caret-up"
+                    data-class="上價"
+                    data-mode="ascend"
+                  ></i></a
+                ><a href="#"
+                  ><i
+                    class="fa-solid fa-caret-down"
+                    data-class="上價"
+                    data-mode="descend"
+                  ></i
+                ></a>
+              </div>
+            </th>
+            <th>
+              中價
+              <div class="switch-order">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-caret-up"
+                    data-class="中價"
+                    data-mode="ascend"
+                  ></i></a
+                ><a href="#"
+                  ><i
+                    class="fa-solid fa-caret-down"
+                    data-class="中價"
+                    data-mode="descend"
+                  ></i
+                ></a>
+              </div>
+            </th>
+            <th>
+              下價
+              <div class="switch-order">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-caret-up"
+                    data-class="下價"
+                    data-mode="ascend"
+                  ></i></a
+                ><a href="#"
+                  ><i
+                    class="fa-solid fa-caret-down"
+                    data-class="下價"
+                    data-mode="descend"
+                  ></i
+                ></a>
+              </div>
+            </th>
+            <th>
+              平均價
+              <div class="switch-order">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-caret-up"
+                    data-class="平均價"
+                    data-mode="ascend"
+                  ></i></a
+                ><a href="#"
+                  ><i
+                    class="fa-solid fa-caret-down"
+                    data-class="平均價"
+                    data-mode="descend"
+                  ></i
+                ></a>
+              </div>
+            </th>
+            <th>
+              交易量
+              <div class="switch-order">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-caret-up"
+                    data-class="交易量"
+                    data-mode="ascend"
+                  ></i></a
+                ><a href="#"
+                  ><i
+                    class="fa-solid fa-caret-down"
+                    data-class="交易量"
+                    data-mode="descend"
+                  ></i
+                ></a>
+              </div>
+            </th>
+          </thead>
+          <tbody id="result-tbody">
+            <td colspan="7" class="default-text">
+              請輸入並搜尋想比價的作物名稱 ^__^
+            </td>
+          </tbody>
+        </table>
+      </div>
+      <select name="render-data" class="render-data render-data-mobile">
+        <option value="" selected disabled hidden>排序</option>
+        <option value="up">依上價排序</option>
+        <option value="mid">依中價排序</option>
+        <option value="down">依下價排序</option>
+        <option value="avg">依平均價排序</option>
+        <option value="amount">依交易量排序</option>
+      </select>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/all.js"></script>
+  </body>
+</html>
