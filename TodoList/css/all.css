@@ -219,11 +219,6 @@ a {
   }
 }
 
-.add-button:active {
-  background: #FFD370;
-  color: #333333;
-}
-
 .item-region {
   font-size: 18px;
   border-radius: 10px;
