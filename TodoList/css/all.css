@@ -212,7 +212,14 @@ a {
   transition: 0.3s;
 }
 
-.add-button:hover {
+@media (hover: hover) {
+  .add-button:hover {
+    background: #FFD370;
+    color: #333333;
+  }
+}
+
+.add-button:active {
   background: #FFD370;
   color: #333333;
 }

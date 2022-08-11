@@ -58,7 +58,13 @@
   top: 4px;
   right: 3px;
   transition: 0.3s;
-  &:hover {
+  @media (hover: hover) {
+    &:hover {
+      background: $primary-color;
+      color: $secondary-color;
+    }
+  }
+  &:active {
     background: $primary-color;
     color: $secondary-color;
   }
@@ -152,7 +158,7 @@
         position: absolute;
         left: 0;
         top: 50%;
-        transform: translateY(-50%) scale(1); 
+        transform: translateY(-50%) scale(1);
         height: 24px;
         width: 24px;
         border-radius: 5px;
