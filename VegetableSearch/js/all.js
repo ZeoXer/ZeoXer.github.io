@@ -62,6 +62,7 @@ function sortByCategory(category, mode) {
 // 通用 DOM
 const search_btn = document.getElementById("search-btn");
 const result_tbody = document.getElementById("result-tbody");
+const search_name = document.getElementById("search-name");
 const show_search_name = document.getElementById("show-search-name");
 const switch_category = document.getElementById("switch-category");
 const render_select = document.querySelectorAll(".render-data");
@@ -70,13 +71,15 @@ const switch_order = document.querySelectorAll(".switch-order");
 // 搜尋按鈕
 search_btn.addEventListener("click", function (e) {
   e.preventDefault();
-  const search_name = document.getElementById("search-name").value;
-  show_search_name.textContent = `查詢「${search_name}」的比價結果`;
+  const search_name_value = search_name.value;
+  show_search_name.textContent = `查詢「${search_name_value}」的比價結果`;
   result_tbody.innerHTML = `<td colspan="7" class="default-text">資料載入中...</td>`;
+  const present_active = document.querySelector(".active");
+  if (present_active) present_active.setAttribute("class", "");
   render_select.forEach((ele) => {
     ele.value = "";
   });
-  getData(search_name, 1);
+  getData(search_name_value, 1);
 });
 
 // 切換大分類
@@ -86,6 +89,7 @@ switch_category.addEventListener("click", (e) => {
   const present_active = document.querySelector(".active");
   if (present_active) present_active.setAttribute("class", "");
   e.target.setAttribute("class", "active");
+  search_name.value = "";
   render_select.forEach((ele) => {
     ele.value = "";
   });
