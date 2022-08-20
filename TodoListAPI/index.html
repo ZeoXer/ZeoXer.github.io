@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/124325d2ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/all.css" />
+    <title>TodoList</title>
+  </head>
+  <body>
+    <section class="login-regist" id="login">
+      <div class="header">
+        <div class="logo">
+          <i class="fa-solid fa-calendar-check"></i>
+          <h1 class="title">ONLINE TODO LIST</h1>
+        </div>
+        <div class="banner"></div>
+      </div>
+      <div class="login-region">
+        <h2>最實用的線上代辦事項服務</h2>
+        <div class="input-region">
+          <label for="email">
+            <span>Email</span>
+            <input type="email" id="login-email" placeholder="請輸入Email" />
+            <p id="login-email-warning"></p>
+          </label>
+          <label for="pwd">
+            <span>密碼</span>
+            <input type="password" id="login-pwd" placeholder="請輸入密碼" />
+            <p id="login-pwd-warning"></p>
+          </label>
+        </div>
+        <a href="#" class="btn main-btn" id="login-btn">登入</a>
+        <a href="#" class="btn sub-btn" id="turn-to-regist">註冊帳號</a>
+      </div>
+    </section>
+    <section class="login-regist" id="regist" style="display: none">
+      <div class="header">
+        <div class="logo">
+          <i class="fa-solid fa-calendar-check"></i>
+          <h2 class="title">ONLINE TODO LIST</h2>
+        </div>
+        <div class="banner"></div>
+      </div>
+      <div class="login-region">
+        <h2>註冊帳號</h2>
+        <div class="input-region">
+          <label for="email">
+            <span>Email</span>
+            <input type="email" id="regist-email" placeholder="請輸入Email" />
+            <p id="regist-email-warning"></p>
+          </label>
+          <label for="email">
+            <span>您的暱稱</span>
+            <input type="text" id="regist-nickname" placeholder="請輸入您的暱稱" />
+            <p id="regist-nickname-warning"></p>
+          </label>
+          <label for="pwd">
+            <span>密碼</span>
+            <input type="password" id="regist-pwd" placeholder="請輸入密碼" />
+            <p id="regist-pwd-warning"></p>
+          </label>
+          <label for="pwd">
+            <span>再次輸入密碼</span>
+            <input type="password" id="regist-pwdRepeat" placeholder="請再次輸入密碼" />
+            <p id="regist-pwdRepeat-warning"></p>
+          </label>
+        </div>
+        <a href="#" class="btn main-btn" id="regist-btn">註冊帳號</a>
+        <a href="#" class="btn sub-btn" id="turn-to-login">前往登入</a>
+      </div>
+    </section>
+    <section id="todo" style="display: none">
+      <div class="container">
+        <h1 class="todo-title">TODO LIST</h1>
+        <div class="add-new-item">
+          <input
+            type="text"
+            id="new-item"
+            class="new-item"
+            name="new-item"
+            placeholder="新增待辦事項"
+          />
+          <a href="#" id="add-button" class="add-button">+</a>
+        </div>
+        <div class="item-region">
+          <ul id="item-category" class="item-category">
+            <li class="category-option active"><a href="#">全部</a></li>
+            <li class="category-option"><a href="#">待完成</a></li>
+            <li class="category-option"><a href="#">已完成</a></li>
+          </ul>
+          <ul id="item-list" class="item-list">
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span>晚上要刷牙</span>
+              </label>
+              <a href="#" class="delete-item" id="delete-item"></a>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span>晚上要刷牙</span>
+              </label>
+              <a href="#" class="delete-item" id="delete-item"></a>
+            </li>
+          </ul>
+          <div class="item-info">
+            <p id="num-info" class="num-info">
+              <em>0</em> 個<span>待完成</span>項目
+            </p>
+            <a href="#" id="clear-all-finished" class="clear-all-finished"
+              >清除已完成項目</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/all.js"></script>
+  </body>
+</html>

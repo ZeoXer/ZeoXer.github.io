@@ -1,0 +1,115 @@
+.login-regist {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  @include mobile-size-415px {
+    display: block;
+    padding: 5%;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  @include mobile-size-415px {
+    justify-content: space-around;
+    margin: 30px 0;
+  }
+  .fa-calendar-check {
+    font-size: $font-sl;
+    margin-right: 10px;
+  }
+}
+
+.title {
+  font-family: "Baloo Tamma 2";
+  font-size: $font-l;
+  color: $secondary;
+  font-weight: bold;
+}
+
+.banner {
+  width: 386px;
+  height: 386px;
+  background: url("../img/login_banner.png") no-repeat;
+  @include mobile-size-415px {
+    display: none;
+  }
+}
+
+.login-region {
+  width: 30%;
+  h2 {
+    font-size: $font-ml;
+    font-weight: bold;
+    margin-bottom: 40px;
+    @include mobile-size-415px {
+      text-align: center;
+    }
+  }
+}
+
+.input-region {
+  display: flex;
+  flex-direction: column;
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    span {
+      margin-bottom: 16px;
+    }
+    input {
+      font-size: $font-m;
+      border-radius: 10px;
+      border: none;
+      padding: 14px;
+      margin-bottom: 5px;
+    }
+    p {
+      color: red;
+      font-weight: bold;
+      font-size: $font-m;
+      margin-left: 5px;
+    }
+  }
+}
+
+.btn {
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.main-btn {
+  width: 40%;
+  padding: 16px 0;
+  color: #fff;
+  border: 3px solid $secondary;
+  background: $secondary;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  @media (hover: hover) {
+    &:hover {
+      background: lighten($secondary, 70%);
+      color: $secondary;
+    }
+  }
+}
+
+.sub-btn {
+  width: 30%;
+  color: $secondary;
+  transition: all 0.3s;
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+}
