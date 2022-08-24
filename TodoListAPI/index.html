@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/img/shorticon.svg" type="image/x-icon">
     <script
       src="https://kit.fontawesome.com/124325d2ef.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./src/css/all.css" />
     <title>TodoList</title>
   </head>
   <body>
@@ -56,7 +57,11 @@
           </label>
           <label for="email">
             <span>您的暱稱</span>
-            <input type="text" id="regist-nickname" placeholder="請輸入您的暱稱" />
+            <input
+              type="text"
+              id="regist-nickname"
+              placeholder="請輸入您的暱稱"
+            />
             <p id="regist-nickname-warning"></p>
           </label>
           <label for="pwd">
@@ -66,7 +71,11 @@
           </label>
           <label for="pwd">
             <span>再次輸入密碼</span>
-            <input type="password" id="regist-pwdRepeat" placeholder="請再次輸入密碼" />
+            <input
+              type="password"
+              id="regist-pwdRepeat"
+              placeholder="請再次輸入密碼"
+            />
             <p id="regist-pwdRepeat-warning"></p>
           </label>
         </div>
@@ -75,52 +84,69 @@
       </div>
     </section>
     <section id="todo" style="display: none">
-      <div class="container">
-        <h1 class="todo-title">TODO LIST</h1>
-        <div class="add-new-item">
-          <input
-            type="text"
-            id="new-item"
-            class="new-item"
-            name="new-item"
-            placeholder="新增待辦事項"
-          />
-          <a href="#" id="add-button" class="add-button">+</a>
+      <div class="bg">
+        <div class="nav-bar">
+          <div class="logo">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h2 class="title">ONLINE TODO LIST</h2>
+          </div>
+          <div class="nav-info">
+            <h2><span></span> 的待辦</h2>
+            <a href="#" id="logout-btn">登出</a>
+          </div>
         </div>
-        <div class="item-region">
-          <ul id="item-category" class="item-category">
-            <li class="category-option active"><a href="#">全部</a></li>
-            <li class="category-option"><a href="#">待完成</a></li>
-            <li class="category-option"><a href="#">已完成</a></li>
-          </ul>
-          <ul id="item-list" class="item-list">
-            <li>
-              <label>
-                <input type="checkbox" />
-                <span>晚上要刷牙</span>
-              </label>
-              <a href="#" class="delete-item" id="delete-item"></a>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" />
-                <span>晚上要刷牙</span>
-              </label>
-              <a href="#" class="delete-item" id="delete-item"></a>
-            </li>
-          </ul>
-          <div class="item-info">
-            <p id="num-info" class="num-info">
-              <em>0</em> 個<span>待完成</span>項目
-            </p>
-            <a href="#" id="clear-all-finished" class="clear-all-finished"
-              >清除已完成項目</a
-            >
+        <div class="container">
+          <div class="add-new-item">
+            <input
+              type="text"
+              id="new-item"
+              class="new-item"
+              name="new-item"
+              placeholder="新增待辦事項"
+            />
+            <a href="#" id="add-button" class="add-button">+</a>
+          </div>
+          <div class="item-region" id="item-region">
+            <ul id="item-category" class="item-category">
+              <li class="category-option active" id="category-all">
+                <a href="#">全部</a>
+              </li>
+              <li class="category-option" id="category-not-completed">
+                <a href="#">待完成</a>
+              </li>
+              <li class="category-option" id="category-completed">
+                <a href="#">已完成</a>
+              </li>
+            </ul>
+            <ul id="item-list" class="item-list">
+              <!-- <li>
+                <label>
+                  <input type="checkbox" />
+                  <span>晚上要刷牙</span>
+                </label>
+                <a href="#" class="modify-item"
+                  ><i class="fa-solid fa-pen"></i
+                ></a>
+                <a href="#" class="modify-item"
+                  ><i class="fa-solid fa-trash-can"></i
+                ></a>
+              </li> -->
+            </ul>
+            <div class="item-info">
+              <p id="num-info" class="num-info"><span>0</span> 個待完成項目</p>
+              <a href="#" id="clear-all-finished" class="clear-all-finished"
+                >清除已完成項目</a
+              >
+            </div>
+          </div>
+          <div class="no-item-region" id="no-item-region">
+            <h3>目前暫無待辦事項</h3>
+            <img src="./src/img/todo_img.png" alt="no-item-img" />
           </div>
         </div>
       </div>
     </section>
 
-    <script src="./js/all.js"></script>
+    <script src="./dist/bundle.js"></script>
   </body>
 </html>
