@@ -123,6 +123,7 @@
   width: 33.333%;
   text-align: center;
   border-bottom: 3px solid $light-gray;
+  transition: 0.3s;
   a {
     display: block;
     padding: 5px 0;
@@ -241,6 +242,7 @@
 
 .clear-all-finished {
   color: $gray;
+  transition: 0.3s;
   &:hover {
     color: $secondary;
     font-weight: bold;

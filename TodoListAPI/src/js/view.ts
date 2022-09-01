@@ -204,4 +204,3 @@ const view = {
 };
 
 export default view;
-// forEach ele.content / ele.completed_at / ele.id

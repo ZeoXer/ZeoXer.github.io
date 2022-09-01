@@ -1,6 +1,6 @@
 import axios from "axios";
 import Swal from "sweetalert2";
-import view from "./view.js";
+import view from "./view";
 
 type showState = "all" | "completed" | "not_completed";
 
@@ -40,6 +40,7 @@ class TodoListAPI {
         });
       });
   }
+
   login(email: string, pwd: string): void {
     axios
       .post(`${this.url}/users/sign_in`, {
@@ -74,6 +75,7 @@ class TodoListAPI {
         });
       });
   }
+
   logout(): void {
     axios
       .delete(`${this.url}/users/sign_out`)
@@ -97,6 +99,7 @@ class TodoListAPI {
       })
       .catch((error) => console.log(error.response));
   }
+
   addTodo(message: string): void {
     axios
       .post(`${this.url}/todos`, {
@@ -109,6 +112,7 @@ class TodoListAPI {
       })
       .catch((error) => console.log(error.response));
   }
+
   editTodo(id: string): void {
     Swal.fire({
       title: "請輸入更動事項內容",
@@ -132,6 +136,7 @@ class TodoListAPI {
       }
     });
   }
+
   toggleTodo(id: string): void {
     axios
       .patch(`${this.url}/todos/${id}/toggle`, {})
@@ -140,6 +145,7 @@ class TodoListAPI {
       })
       .catch((error) => console.log(error.response));
   }
+  
   deleteTodo(id: string): void {
     axios
       .delete(`${this.url}/todos/${id}`)
